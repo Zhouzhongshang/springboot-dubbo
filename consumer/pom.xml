@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--1继承父pom-->
+    <parent>
+        <groupId>com.zhou</groupId>
+        <artifactId>springboot-dubbo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.zhou</groupId>
+    <artifactId>consumer</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>consumer</name>
+    <packaging>jar</packaging>
+    <description>Demo project for Spring Boot</description>
+
+
+    <dependencies>
+            <!-- 2.引入服务接口依赖是因为要注入提供者的Service -->
+            <dependency>
+                <groupId>com.zhou</groupId>
+                <artifactId>provider</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+    </dependencies>
+
+
+</project>
