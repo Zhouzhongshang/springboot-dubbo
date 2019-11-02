@@ -23,6 +23,10 @@
     </properties>
 
     <!--模块管理-->
+    <modules>
+            <module>provider</module>
+            <module>consumer</module>
+    </modules>
 
 
     <dependencies>
